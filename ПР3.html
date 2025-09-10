@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню ресторану</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #ddd;
+            text-align: center;
+        }
+
+        .section {
+            background-color: #ffe4b5;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .special {
+            background-color: #d0f0c0;
+            font-weight: bold;
+        }
+
+        .veg {
+            color: green;
+        }
+
+        .allergen {
+            color: red;
+        }
+
+        .note {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Меню ресторану</h1>
+
+    <table>
+        <tr>
+            <th>Назва страви</th>
+            <th>Опис</th>
+            <th>Ціна</th>
+        </tr>
+
+        <!-- Сніданок -->
+        <tr>
+            <td colspan="3" class="section">Сніданок</td>
+        </tr>
+        <tr>
+            <td>Яєчня з овочами <span class="veg">(вегетаріанське)</span></td>
+            <td>З томатами, перцем і хлібом</td>
+            <td>80 грн</td>
+        </tr>
+        <tr class="special">
+            <td>Сніданок дня</td>
+            <td>Каша + чай <span class="allergen">(містить молоко)</span></td>
+            <td>60 грн (Акція!)</td>
+        </tr>
+
+        <!-- Обід -->
+        <tr>
+            <td colspan="3" class="section">Обід</td>
+        </tr>
+        <tr>
+            <td>Борщ</td>
+            <td>Зі сметаною та хлібом</td>
+            <td>90 грн</td>
+        </tr>
+        <tr>
+            <td>Салат овочевий <span class="veg">(вегетаріанське)</span></td>
+            <td>Помідори, огірки, зелень</td>
+            <td>70 грн</td>
+        </tr>
+        <tr class="special">
+            <td>Обідній комплект</td>
+            <td>Суп + друга страва + чай</td>
+            <td>130 грн (Спецціна)</td>
+        </tr>
+
+        <!-- Вечеря -->
+        <tr>
+            <td colspan="3" class="section">Вечеря</td>
+        </tr>
+        <tr>
+            <td>Картопля по-селянськи</td>
+            <td>З грибами та соусом</td>
+            <td>100 грн</td>
+        </tr>
+        <tr>
+            <td>Риба з овочами</td>
+            <td>Запечена в духовці <span class="allergen">(може містити рибні кістки)</span></td>
+            <td>150 грн</td>
+        </tr>
+        <tr class="special">
+            <td>Страва вечора</td>
+            <td>М’ясо з гарніром + компот</td>
+            <td>180 грн (Знижка!)</td>
+        </tr>
+    </table>
+
+    <p class="note">
+        * Примітки: <span class="veg">Вегетаріанські</span> страви не містять м’яса. 
+        <span class="allergen">Червоним</span> позначено можливі алергени.
+    </p>
+
+</body>
+</html>
